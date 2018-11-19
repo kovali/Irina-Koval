@@ -1,0 +1,271 @@
+/*Specification*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #efefe2;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #000000;
+}
+
+.logo {
+    width: 37px;
+    padding-top: 22px;
+}
+
+.logo__title {
+    padding-top: 30px;
+    padding-left: 13px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.header {
+
+    height: 100vh;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu__item {
+    margin: 0 20px;
+    white-space: nowrap;
+}
+
+.menu__item a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu__item a:hover {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f04c69;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid #f1bab8;
+    padding-bottom: 20px;
+
+}
+
+.menu__item-order {
+    padding-top: -10px;
+}
+
+.menu__item-order a {
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 700;
+    background: #2f3a3d;
+    text-decoration: none;
+    color: #f1f4f7;
+    display: block;
+    padding: 7px 19px;
+    margin: -5px 20px;
+    text-align: center;
+
+}
+
+.menu__icon {
+    display: none;
+    width: 40px;
+    position: absolute;
+    right: 16px;
+    top: 4%;
+    float: right;
+    cursor: pointer;
+}
+
+.divide {
+    background: #000000;
+    display: block;
+    height: 3px;
+    margin-bottom: 6px;
+    float: right;
+    width: 100%;
+}
+
+.icon__btn {
+    margin-left: 140px;
+    margin-top: 25px;
+    padding: 7px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #707070;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 0;
+}
+
+.icon__btn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.icon__lock {
+    font-size: 15px;
+}
+
+.planet__logo {
+    padding-top: 150px;
+    /*margin-right: 90px;*/
+    margin-left: -120px;
+
+}
+
+.title {
+    padding-top: 147px;
+    padding-bottom: 44px;
+    text-align: justify;
+
+}
+
+.title__main {
+    font-size: 50px;
+    color: #d0ca9e;
+    white-space: nowrap;
+
+}
+
+.offer__block {
+    margin-right: 40px;
+
+}
+
+.offer__title {
+    color: #3c201f;
+    font-size: 26px;
+}
+
+.offer__text {
+    padding-top: 30px;
+    color: #262423;
+    font-size: 16px;
+}
+
+/*media*/
+@media screen and (max-width: 1366px) {
+    .icon__btn {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .header .container {
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__icon {
+        display: block;
+        top: 11%;
+    }
+
+    .logo__title {
+        white-space: nowrap;
+    }
+
+    .col-8 {
+        max-width: 100%;
+    }
+
+    .offset-1 {
+        margin-left: 40px;
+    }
+
+    .menu__item {
+        display: none;
+    }
+
+    .title__main {
+        font-size: 35px;
+    }
+
+    .menu__item-order {
+        padding-left: 170px;
+    }
+
+    .menu__item-order a {
+        margin: -4px -40px;
+    }
+
+    .icon__btn {
+        margin: 25px -40px;
+    }
+
+    .planet__logo {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .offer__block {
+        margin-right: 10px;
+    }
+}
+
+@media screen  and (max-width: 320px) {
+
+    .icon__btn {
+        margin: 90px -240px;
+    }
+
+    .menu__icon {
+        display: block;
+        top: 20%;
+    }
+
+    .menu__item {
+        display: none;
+    }
+
+    .menu__item-order {
+        display: none;
+    }
+
+    .planet__logo {
+        text-align: center;
+        margin-left: 0;
+        width: 250px;
+        margin-top: -200px;
+        margin-bottom: -100px;
+    }
+
+    .offer {
+        flex-direction: column;
+
+    }
+
+    .offset-1 {
+        margin-left: 2px;
+    }
+
+    .title__main {
+        font-size: 22px;
+    }
+}
